@@ -15,21 +15,21 @@ body {
   background-color: #333;
 }
 
-.floor {
+.hangman1 {
   width: 100px;
   height: 10px;
   top: 200px;
   left: 10px;
 }
 
-.pole {
+.hangman2 {
   width: 10px;
   height: 200px;
   top: 10px;
   left: 50px;
 }
 
-.stick {
+.hangman3 {
   width: 60px;
   height: 10px;
   top: 30px;
@@ -37,21 +37,21 @@ body {
   transform: rotate(-45deg);
 }
 
-.beam {
+.hangman4 {
   width: 100px;
   height: 10px;
   top: 10px;
   left: 50px;
 }
 
-.rope {
+.hangman5 {
   width: 2px;
   height: 40px;
   top: 10px;
   left: 123px;
 }
 
-.head {
+.hangman6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -59,7 +59,7 @@ body {
   left: 105px;
 }
 
-.body {
+.hangman7 {
   width: 10px;
   height: 70px;
   top: 85px;
