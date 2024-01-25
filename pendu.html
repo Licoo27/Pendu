@@ -1,24 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Pendu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Pendu</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #hangman-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        
+    </style>
 </head>
 <body>
-  <div class="hangman">
-    <div class="floor"></div>
-    <div class="pole"></div>
-    <div class="stick"></div>
-    <div class="beam"></div>
-    <div class="rope"></div>
-    <div class="head"></div>
-    <div class="body"></div>
+    <h1>Jeu du Pendu</h1>
+
+
+    <div class="hangman1"></div>
+    <div class="hangman2"></div>
+    <div class="hangman3"></div>
+    <div class="hangman4"></div>
+    <div class="hangman5"></div>
+    <div class="hangman6"></div>
+    <div class="hangman7"></div>
+
     <div class="left-arm"></div>
     <div class="right-arm"></div>
+
     <div class="left-leg"></div>
     <div class="right-leg"></div>
-  </div>
+
+
+    <div id="word-container">
+        Mot actuel: <span id="word"></span>
+    </div>
+
+    <div id="letters-container">
+        Lettres déjà dites: <span id="letters"></span>
+    </div>
+
+    <div id="input-container">
+        Entrez une lettre: <input type="text" id="letter-input" maxlength="1">
+        <button onclick="jouerTour()">Devinez</button>
+    </div>
+
+    <div id="message-container">
+        <p id="message"></p>
+    </div>
+
+    <div class="keyboard" id="keyboard"></div>
+
+    <button id="restart-button" onclick="recommencerPartie()">Recommencer</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
