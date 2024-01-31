@@ -1,4 +1,4 @@
-vavar mots = [];
+var mots = [];
 
 async function recupMots() {
   return await fetch("pli07.txt")
